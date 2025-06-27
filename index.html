@@ -1,228 +1,211 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>CV Desarrollador Full Stack</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CV Desarrollador Full Stack</title>
+      <!-- Google Fonts -->
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  </head>
+  <body>
+    <button class="download-btn" onclick="downloadPDF()">Descargar</button>
+    <div class="cv-container" id="cv">
+      <header class="cv-header">
+        <h1>Crisz360</h1>
+        <p>Desarrollador Full Stack</p>
+      </header>
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="style/style.css">
-</head>
-<body>
+      <div class="cv-body">
+        <aside class="sidebar">
+          <div class="section">
+            <h2>Contacto</h2>
+            <ul class="contact-info">
+              <li>
+                  <i class="fas fa-envelope"></i>
+                  A1F33@crisz360.com
+              </li>
+              <li>
+                  <i class="fas fa-phone"></i>
+                  +52 (222) 222 2222
+              </li>
+              <li>
+                  <i class="fa-brands fa-github"></i>
+                  Crisz360
+              </li>
+              <li>
+                  <i class="fab fa-linkedin"></i>
+                  cristian-escamilla360
+              </li>
+              <li>
+                  <i class="fab fa-youtube"></i> Crisz360
+              </li>
+            </ul>
+          </div>
+          <div class="section">
+            <h2>Habilidades</h2>
+            <ul class="skills-list">
+              <li><i class="fas fa-code"></i> Frontend: React, Vue.js, HTML5, CSS, Tailwind CSS, Bootstrap, Angular, JavaScript</li>
+              <li><i class="fas fa-server"></i> Backend: PHP, Python, Java</li>
+              <li><i class="fas fa-server"></i> Frameworks Backend: PHP, Python, Java</li>
+              <li><i class="fas fa-database"></i> BD: MySQL, SQL Server, Oracle</li>
+              <li><i class="fas fa-cogs"></i> DevOps: Docker, Git</li>
+              <li><i class="fas fa-sync-alt"></i> APIs: RESTful</li>
+            </ul>
+          </div>
+          <div class="section">
+            <h2>Idiomas</h2>
+            <ul class="skills-list">
+              <li><i class="fas fa-language"></i> Español (Nativo)</li>
+              <li><i class="fas fa-language"></i> Inglés (B2)</li>
+              <li><i class="fas fa-language"></i> Francés (Básico)</li>
+            </ul>
+          </div>
+          <div class="section">
+            <h2>Certificaciones en TIC</h2>
+            <ul class="skills-list">
+              <li><i class="fas fa-certificate"></i> Cisco Certified Network Associate (CCNA) - 2024</li>
+              <li><i class="fas fa-certificate"></i> CompTIA Security+ (Ciberseguridad) - 2023</li>
+              <li><i class="fas fa-certificate"></i> AWS Certified Cloud Practitioner - 2024</li>
+              <li><i class="fas fa-certificate"></i> Google IT Support Professional Certificate - 2023</li>
+            </ul>
+          </div>
+        </aside>
 
-  <button class="download-btn" onclick="downloadPDF()">Descargar</button>
+        <section class="main">
+          <div class="section">
+            <h2>Perfil Profesional</h2>
+            <p class="profile-text">
+              Soy Cristhian, Desarrollador Full Stack con experiencia en el desarrollo de sitios web y aplicaciones web.
+            </p>
+          </div>
 
-  <div class="cv-container" id="cv">
-    <header class="cv-header">
-      <h1>Crisz360</h1>
-      <p>Desarrollador Full Stack</p>
-    </header>
-
-    <div class="cv-body">
-      <aside class="sidebar">
-        <div class="section">
-          <h2>Contacto</h2>
-          <ul class="contact-info">
-            <li>
-                <i class="fas fa-envelope"></i>
-                A1F33@crisz360.com
-            </li>
-            <li>
-                <i class="fas fa-phone"></i>
-                +52 (222) 222 2222
-            </li>
-            <li>
-                <i class="fa-brands fa-github"></i>
-                Crisz360
-            </li>
-            <li>
-                <i class="fab fa-linkedin"></i>
-                cristian-escamilla360
-            </li>
-            <li>
-                <i class="fab fa-youtube"></i> Crisz360
-            </li>
-          </ul>
-        </div>
-        <div class="section">
-          <h2>Habilidades</h2>
-          <ul class="skills-list">
-            <li><i class="fas fa-code"></i> Frontend: React, Vue.js, HTML5, CSS, Tailwind CSS, Bootstrap, Angular, JavaScript</li>
-            <li><i class="fas fa-server"></i> Backend: PHP, Python, Java</li>
-            <li><i class="fas fa-server"></i> Frameworks Backend: PHP, Python, Java</li>
-            <li><i class="fas fa-database"></i> BD: MySQL, SQL Server, Oracle</li>
-            <li><i class="fas fa-cogs"></i> DevOps: Docker, Git</li>
-            <li><i class="fas fa-sync-alt"></i> APIs: RESTful</li>
-          </ul>
-        </div>
-        <div class="section">
-          <h2>Idiomas</h2>
-          <ul class="skills-list">
-            <li><i class="fas fa-language"></i> Español (Nativo)</li>
-            <li><i class="fas fa-language"></i> Inglés (B2)</li>
-            <li><i class="fas fa-language"></i> Francés (Básico)</li>
-          </ul>
-        </div>
-        <div class="section">
-          <h2>Certificaciones en TIC</h2>
-          <ul class="skills-list">
-            <li><i class="fas fa-certificate"></i> Cisco Certified Network Associate (CCNA) - 2024</li>
-            <li><i class="fas fa-certificate"></i> CompTIA Security+ (Ciberseguridad) - 2023</li>
-            <li><i class="fas fa-certificate"></i> AWS Certified Cloud Practitioner - 2024</li>
-            <li><i class="fas fa-certificate"></i> Google IT Support Professional Certificate - 2023</li>
-          </ul>
-        </div>
-      </aside>
-
-      <section class="main">
-        <div class="section">
-          <h2>Perfil Profesional</h2>
-          <p class="profile-text">
-            Soy Cristhian, Desarrollador Full Stack con experiencia en el desarrollo de sitios web y aplicaciones web.
-          </p>
-        </div>
-
-        <div class="section">
-          <h2>Experiencia Laboral</h2>
-          <div class="job">
-            <div class="job-header">
-              <div>
-                <span class="job-title">Desarrollador Full Stack Senior</span>
-                <span class="job-company">| TechSolutions Inc.</span>
+          <div class="section">
+            <h2>Experiencia Laboral</h2>
+            <div class="job">
+              <div class="job-header">
+                <div>
+                  <span class="job-title">Desarrollador Full Stack Senior</span>
+                  <span class="job-company">| TechSolutions Inc.</span>
+                </div>
+                <span class="job-duration">2022 - Presente</span>
               </div>
-              <span class="job-duration">2022 - Presente</span>
+              <div class="job-description">
+                <ul>
+                  <li>Lideré el desarrollo de una plataforma SaaS con React.js (frontend) y Node.js + MongoDB (backend).</li>
+                  <li>Optimicé APIs REST reduciendo tiempos de respuesta en un 40% mediante caching con Redis.</li>
+                  <li>Implementación de CI/CD con Docker y Kubernetes para despliegues automatizados en AWS.</li>
+                </ul>
+              </div>
             </div>
-            <div class="job-description">
-              <ul>
-                <li>Lideré el desarrollo de una plataforma SaaS con React.js (frontend) y Node.js + MongoDB (backend).</li>
-                <li>Optimicé APIs REST reduciendo tiempos de respuesta en un 40% mediante caching con Redis.</li>
-                <li>Implementación de CI/CD con Docker y Kubernetes para despliegues automatizados en AWS.</li>
-              </ul>
+
+            <div class="job">
+              <div class="job-header">
+                <div>
+                  <span class="job-title">Desarrollador Full Stack</span>
+                  <span class="job-company">| DigitalWare Labs</span>
+                </div>
+                <span class="job-duration">2019 - 2022</span>
+              </div>
+              <div class="job-description">
+                <ul>
+                  <li>Desarrollé aplicaciones web con Python (Django) y Vue.js para clientes del sector financiero.</li>
+                  <li>Diseñé bases de datos PostgreSQL escalables para sistemas de procesamiento de pagos.</li>
+                  <li>Integración de servicios de autenticación (OAuth 2.0) y pasarelas de pago (Stripe, PayPal).</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="job">
+              <div class="job-header">
+                <div>
+                  <span class="job-title">Desarrollador Backend Jr.</span>
+                  <span class="job-company">| NexoSoft</span>
+                </div>
+                <span class="job-duration">2017 - 2019</span>
+              </div>
+              <div class="job-description">
+                <ul>
+                  <li>Mantenimiento de APIs legacy en PHP (Laravel) y migración parcial a microservicios.</li>
+                  <li>Automatización de reportes con Python (Pandas) para análisis de datos empresariales.</li>
+                </ul>
+              </div>
             </div>
           </div>
 
-          <div class="job">
-            <div class="job-header">
-              <div>
-                <span class="job-title">Desarrollador Full Stack</span>
-                <span class="job-company">| DigitalWare Labs</span>
+          <div class="section">
+            <h2>Educación</h2>
+            <div class="education">
+              <div class="edu-header">
+                <div>
+                  <span class="edu-title">Ingeniería en Tecnologías de la Información y la Comunicación</span>
+                  <span class="edu-institution">| Hosei University of Science and Technology</span>
+                </div>
+                <span class="edu-duration">2017 - 2019</span>
               </div>
-              <span class="job-duration">2019 - 2022</span>
-            </div>
-            <div class="job-description">
-              <ul>
-                <li>Desarrollé aplicaciones web con Python (Django) y Vue.js para clientes del sector financiero.</li>
-                <li>Diseñé bases de datos PostgreSQL escalables para sistemas de procesamiento de pagos.</li>
-                <li>Integración de servicios de autenticación (OAuth 2.0) y pasarelas de pago (Stripe, PayPal).</li>
-              </ul>
             </div>
           </div>
 
-          <div class="job">
-            <div class="job-header">
-              <div>
-                <span class="job-title">Desarrollador Backend Jr.</span>
-                <span class="job-company">| NexoSoft</span>
+          <div class="section">
+            <h2>Proyectos Representativos</h2>
+            <div class="project">
+              <div class="proj-header">
+                <div>
+                  <span class="proj-title">Plataforma E-commerce "ShopPlus"</span> 
+                  <span class="job-company"> | DevCode Solutions</span>
+                </div>
+                <span class="proj-duration">2023</span>
               </div>
-              <span class="job-duration">2017 - 2019</span>
+              <div class="proj-description">
+                <ul>
+                  <li>Desarrollo completo con React.js (frontend), Node.js + Express (backend) y MongoDB.</li>
+                  <li>Integración de pasarelas de pago (Stripe) y sistema de recomendación con IA (Python).</li>
+                  <li>Despliegue en AWS EC2 con Docker. (React, Node.js, MongoDB, AWS, Docker)</li>
+                </ul>
+              </div>
             </div>
-            <div class="job-description">
-              <ul>
-                <li>Mantenimiento de APIs legacy en PHP (Laravel) y migración parcial a microservicios.</li>
-                <li>Automatización de reportes con Python (Pandas) para análisis de datos empresariales.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
 
-        <div class="section">
-          <h2>Educación</h2>
-          <div class="education">
-            <div class="edu-header">
-              <div>
-                <span class="edu-title">Ingeniería en Tecnologías de la Información y la Comunicación</span>
-                <span class="edu-institution">| Hosei University of Science and Technology</span>
+            <div class="project">
+              <div class="proj-header">
+                <div>
+                  <span class="proj-title">Sistema de Gestión SaaS "BizFlow"</span> 
+                  <span class="job-company"> | InnoTech Corp</span>
+                </div>
+                <span class="proj-duration">2022</span>
               </div>
-              <span class="edu-duration">2017 - 2019</span>
+              <div class="proj-description">
+                <ul>
+                  <li>Arquitectura de microservicios con Spring Boot (Java) y frontend en Angular.</li>
+                  <li>Implementación de JWT para autenticación y Redis para caché de alta velocidad.</li>
+                  <li>CI/CD con GitHub Actions y Kubernetes. (Java, Angular, Redis, Kubernetes)</li>
+                </ul>
+              </div>
             </div>
-          </div>
-        </div>
 
-        <div class="section">
-          <h2>Proyectos Representativos</h2>
-          <div class="project">
-            <div class="proj-header">
-              <div>
-                <span class="proj-title">Plataforma E-commerce "ShopPlus"</span> 
-                <span class="job-company"> | DevCode Solutions</span>
+            <div class="project">
+              <div class="proj-header">
+                <div>
+                  <span class="proj-title">App de Fitness "FitTrack"</span> 
+                  <span class="job-company"> | HealthTech Labs</span>
+                </div>
+                <span class="proj-duration">2021</span>
               </div>
-              <span class="proj-duration">2023</span>
-            </div>
-            <div class="proj-description">
-              <ul>
-                <li>Desarrollo completo con React.js (frontend), Node.js + Express (backend) y MongoDB.</li>
-                <li>Integración de pasarelas de pago (Stripe) y sistema de recomendación con IA (Python).</li>
-                <li>Despliegue en AWS EC2 con Docker. (React, Node.js, MongoDB, AWS, Docker)</li>
-              </ul>
+              <div class="proj-description">
+                <ul>
+                  <li>App híbrida desarrollada con Flutter y Firebase (autenticación y base de datos).</li>
+                  <li>Integración con wearables (Apple Watch/Google Fit) y panel admin con Django.</li>
+                  <li>Publicación en Google Play y App Store. (Flutter, Firebase, Python)</li>
+                </ul>
+              </div>
             </div>
           </div>
-
-          <div class="project">
-            <div class="proj-header">
-              <div>
-                <span class="proj-title">Sistema de Gestión SaaS "BizFlow"</span> 
-                <span class="job-company"> | InnoTech Corp</span>
-              </div>
-              <span class="proj-duration">2022</span>
-            </div>
-            <div class="proj-description">
-              <ul>
-                <li>Arquitectura de microservicios con Spring Boot (Java) y frontend en Angular.</li>
-                <li>Implementación de JWT para autenticación y Redis para caché de alta velocidad.</li>
-                <li>CI/CD con GitHub Actions y Kubernetes. (Java, Angular, Redis, Kubernetes)</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="project">
-            <div class="proj-header">
-              <div>
-                <span class="proj-title">App de Fitness "FitTrack"</span> 
-                <span class="job-company"> | HealthTech Labs</span>
-              </div>
-              <span class="proj-duration">2021</span>
-            </div>
-            <div class="proj-description">
-              <ul>
-                <li>App híbrida desarrollada con Flutter y Firebase (autenticación y base de datos).</li>
-                <li>Integración con wearables (Apple Watch/Google Fit) y panel admin con Django.</li>
-                <li>Publicación en Google Play y App Store. (Flutter, Firebase, Python)</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </div>
-  </div>
 
-  <!-- html2pdf JS para exportar -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
-  <script>
-    function downloadPDF() {
-      const element = document.getElementById('cv');
-      const opt = {
-        margin:       0,
-        filename:     'CV_Crisz360.pdf',
-        image:        { type: 'jpeg', quality: 0.98 },
-        html2canvas:  { scale: 2 },
-        jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
-      };
-      html2pdf().set(opt).from(element).save();
-    }
-  </script>
-
-</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="assets/js/cv.js"></script>
+  </body>
 </html>
